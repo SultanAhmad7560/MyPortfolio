@@ -9,8 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #2c3e50; /* Dark background color */
-  color: #ecf0f1; /* Light text color */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color */
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 p {
-  color: #bdc3c7; /* Medium text color */
+  color: #666; /* Medium text color */
 }
 
 /* TRANSITION */
@@ -38,7 +38,8 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 8vh;
+  background-color: #f39c12; /* Bright orange */
 }
 
 .nav-links {
@@ -48,14 +49,13 @@ nav {
 }
 
 a {
-  color: #ecf0f1; /* Light text color */
+  color: #333; /* Dark text color */
   text-decoration: none;
 }
 
 a:hover {
-  color: #bdc3c7; /* Medium text color */
+  color: #f39c12; /* Bright orange */
   text-decoration: underline;
-  text-underline-offset: 1rem;
 }
 
 .logo {
@@ -89,7 +89,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: #ecf0f1; /* Light text color */
+  background-color: #333; /* Dark text color */
   transition: all 0.3 ease-in-out;
 }
 
@@ -97,7 +97,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #34495e; /* Darker background color */
+  background-color: #fff; /* White background */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -109,7 +109,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: #ecf0f1; /* Light text color */
+  color: #333; /* Dark text color */
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -228,34 +228,14 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  background-color: #3498db; /* Bright blue */
+  color: #fff; /* White text color */
+  border: none;
 }
 
-.btn-color-1,
-.btn-color-2 {
-  border: #bdc3c7 0.1rem solid; /* Medium text color */
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
+.btn:hover {
+  background-color: #2980b9; /* Darker blue */
   cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: #bdc3c7; /* Medium text color */
-  color: #2c3e50; /* Dark background color */
-}
-
-.btn-color-1:hover {
-  background: #95a5a6; /* Lighter background color */
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: #ecf0f1 0.1rem solid; /* Light text color */
 }
 
 .btn-container {
@@ -297,9 +277,9 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #ecf0f1; /* Light text color */
+  background: #fff; /* White background */
   border-radius: 2rem;
-  border: #bdc3c7 0.1rem solid; /* Medium text color */
+  border: #333 0.1rem solid; /* Dark text color */
   text-align: center;
 }
 
@@ -321,7 +301,7 @@ section {
 }
 
 .experience-sub-title {
-  color: #bdc3c7; /* Medium text color */
+  color: #666; /* Medium text color */
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -360,8 +340,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: #bdc3c7; /* Medium text color */
-  background: #ecf0f1; /* Light text color */
+  border-color: #333; /* Dark text color */
+  background: #fff; /* White background */
 }
 
 .project-img {
@@ -372,12 +352,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: #2c3e50; /* Dark background color */
+  color: #333; /* Dark text color */
 }
 
 .project-btn {
-  color: #2c3e50; /* Dark background color */
-  border-color: #bdc3c7; /* Medium text color */
+  color: #333; /* Dark text color */
+  border-color: #333; /* Dark text color */
 }
 
 /* CONTACT */
@@ -393,8 +373,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: #bdc3c7 0.1rem solid; /* Medium text color */
-  background: #ecf0f1; /* Light text color */
+  border: #333 0.1rem solid; /* Dark text color */
+  background: #fff; /* White background */
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -425,10 +405,10 @@ footer {
   height: 10%;
   width: 100%
   margin: 0 1rem;
-  background-color: #2c3e50; /* Dark background color */
+  background-color: #333; /* Dark text color */
 }
 
 footer p {
-  color: #ecf0f1; /* Light text color */
+  color: #fff; /* White text color */
   text-align: center;
 }

@@ -3,175 +3,269 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #111; /* Dark background */
-  color: #fff; /* White text color */
-  line-height: 1.6;
-  overflow-x: hidden; /* Disable horizontal overflow */
+    font-family: "Poppins", sans-serif;
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text color */
+    line-height: 1.6;
+    overflow-x: hidden; /* Disable horizontal overflow */
 }
 
 p {
-  color: #ddd; /* Light grey text color */
+    color: #ddd; /* Light grey text color */
 }
 
 a {
-  color: #ff00ff; /* Neon pink link color */
-  text-decoration: none;
+    color: #ff00ff; /* Neon pink link color */
+    text-decoration: none;
 }
 
 a:hover {
-  color: #ff99cc; /* Lighter pink on hover */
+    color: #ff99cc; /* Lighter pink on hover */
 }
 
 /* TRANSITIONS */
 
 * {
-  transition: all 0.5s ease; /* Smooth transition for all elements */
+    transition: all 0.5s ease; /* Smooth transition for all elements */
 }
 
 /* NAVIGATION */
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #111;
-  padding: 20px 0;
-  text-align: center;
-  z-index: 1000; /* Ensure nav stays on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure nav stays on top */
 }
 
 nav ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li a {
-  padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* HERO SECTION */
-
-.hero {
-  text-align: center;
-  padding: 100px 0;
+.logo {
+    color: #ff00ff; /* Neon pink logo color */
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.hero h1 {
-  font-size: 3rem;
+/* SECTIONS */
+
+section {
+    padding: 100px 0;
+    text-align: center;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-top: 20px;
+/* BUTTONS */
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-/* ABOUT SECTION */
-
-.about {
-  background-color: #222;
-  padding: 100px 0;
+.btn-color-1 {
+    background-color: #ff00ff; /* Neon pink button color */
+    color: #fff;
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  color: #ff00ff; /* Neon pink heading color */
+.btn-color-1:hover {
+    background-color: #ff99cc; /* Lighter pink on hover */
 }
 
-.about p {
-  font-size: 1.2rem;
-  margin-top: 20px;
+.btn-color-2 {
+    background-color: #ff99cc; /* Lighter pink button color */
+    color: #fff;
 }
 
-/* PROJECTS SECTION */
-
-.projects {
-  background-color: #333;
-  padding: 100px 0;
+.btn-color-2:hover {
+    background-color: #ff00ff; /* Neon pink on hover */
 }
 
-.project {
-  margin-bottom: 40px;
+/* SOCIAL ICONS */
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
-.project img {
-  max-width: 100%;
-  height: auto;
-}
-
-.project h3 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-  color: #ff00ff; /* Neon pink heading color */
-}
-
-.project p {
-  font-size: 1.1rem;
-  margin-top: 10px;
-}
-
-/* CONTACT SECTION */
-
-.contact {
-  background-color: #444;
-  padding: 100px 0;
-}
-
-.contact h2 {
-  font-size: 2.5rem;
-  color: #ff00ff; /* Neon pink heading color */
-}
-
-.contact p {
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
-
-.contact form {
-  margin-top: 20px;
-}
-
-.contact label,
-.contact input,
-.contact textarea,
-.contact button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.contact button {
-  padding: 10px 0;
-  background-color: #ff00ff; /* Neon pink button color */
-  color: #111; /* Dark background color */
-  border: none;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #ff99cc; /* Lighter pink button color on hover */
-}
-
-/* FOOTER SECTION */
+/* FOOTER */
 
 footer {
-  background-color: #111;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
+    background-color: #111;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-  font-size: 1rem;
+/* HAMBURGER MENU */
+
+.hamburger-menu {
+    display: none;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #111;
+        padding: 10px 0;
+    }
+
+    .menu-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu-links li a {
+        color: #fff;
+    }
+
+    .menu-links li a:hover {
+        color: #ff99cc; /* Lighter pink on hover */
+    }
+}
+
+/* ADDITIONAL STYLING */
+
+.section__pic-container {
+    margin-bottom: 20px;
+}
+
+.section__text__p1 {
+    font-size: 1.5rem;
+    color: #ff99cc; /* Lighter pink heading color */
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.section__text__p2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.socials-container {
+    margin-top: 20px;
+}
+
+.arrow {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.about-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.details-container {
+    margin-right: 30px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.project-img {
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    margin-top: 10px;
+}
+
+.color-container {
+    background-color: #222; /* Darker background for project containers */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.experience-sub-title {
+    margin-top: 20px;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+

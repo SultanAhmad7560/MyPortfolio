@@ -170,14 +170,26 @@ themeButton.addEventListener("click", () => {
 });
 
  function sendMessage() {
-        const name = document.getElementById('nameInput').value;
-        const email = document.getElementById('emailInput').value;
-        const subject = document.getElementById('subjectInput').value;
-        const description = document.getElementById('descriptionInput').value;
+    const name = document.getElementById('nameInput').value;
+    const email = document.getElementById('emailInput').value;
+    const subject = document.getElementById('subjectInput').value;
+    const description = document.getElementById('descriptionInput').value;
 
-        const mailto_link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent('Sultan.ahmad.asif@gmail.com') +
-            "&su=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nDescription: " + description);
+    const xhr = new XMLHttpRequest();
+    const url = 'sendmail.php'; 
+    const params = 'name=' + encodeURIComponent(name) + '&email=' + encodeURIComponent(email) + '&subject=' + encodeURIComponent(subject) + '&description=' + encodeURIComponent(description);
 
-        window.location.href = mailto_link;
-    }
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert('Email sent successfully.');
+        } else {
+            alert('Failed to send email.');
+        }
+    };
+
+    xhr.send(params);
+}
+

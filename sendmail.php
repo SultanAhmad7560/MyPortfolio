@@ -5,8 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST["subject"];
     $description = $_POST["description"];
 
-    $to = "Sultan.ahmad.asif@gmail.com";
-    $message = "$description";
+    $to = "Sultan.Ahmad.Asif@gmail.com";
+    $message = "Name: $name\nEmail: $email\nSubject: $subject\nDescription: $description";
     $headers = "From: $email";
 
     if (mail($to, $subject, $message, $headers)) {

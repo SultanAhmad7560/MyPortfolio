@@ -7,6 +7,8 @@
 
   /*========== Colors ==========*/
  /* Change favorite color */
+
+body.dark-theme {
 --hue-color: 180; /* Blue-green hues for a warm day */
 
 /* Color palette */
@@ -22,8 +24,7 @@
 --container-color: hsl(var(--hue-color), 60%, 92%); /* Container color */
 --scroll-bar-color: hsl(var(--hue-color), 30%, 90%); /* Scroll bar color */
 --scroll-thumb-color: hsl(var(--hue-color), 30%, 80%); /* Scroll thumb color */
-
-
+ }
   
 
   /*========== Font and typography ==========*/

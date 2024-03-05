@@ -73,9 +73,10 @@
 
 /*========== Variables Dark theme ==========*/
 
---hue-color-neon-blue: 210;
-
 body.dark-theme {
+
+  --hue-color-neon-blue: 210;
+  
   --first-color-second: hsl(var(--hue-color-neon-blue), 80%, 8%);
   --title-color: hsl(var(--hue-color-neon-blue), 8%, 95%);
   --text-color: hsl(var(--hue-color-neon-blue), 8%, 45%);

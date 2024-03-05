@@ -194,13 +194,12 @@ themeButton.addEventListener("click", () => {
 }
 
 
-const changeColorButton = document.querySelector('.change-color');
 const colorChangeButton = document.getElementById('colorchange-button');
 const body = document.body;
 
-changeColorButton.onclick = () => {
+colorChangeButton.onclick = () => {
     const hue = Math.floor(Math.random() * 360); // Generate a random hue value between 0 and 360
     body.style.setProperty('--hue-color', hue);
-    colorChangeButton.style.backgroundColor = `hsl(${hue}, 60%, 50%)`; // Set the background color of the circle
 };
+
 

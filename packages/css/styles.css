@@ -5,10 +5,9 @@
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
- /* Change favorite color */
-
 body {
+    /*========== Colors ==========*/
+ /* Change favorite color */
 --hue-color: 180; /* Blue-green hues for a warm day */
 
 /* Color palette */

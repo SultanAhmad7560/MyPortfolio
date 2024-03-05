@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "Sultan.ahmad.asif@example.com";
     $headers = "From: $email";
 
-    if (mail($to, $subject, $message, $headers)) {
+    if (mail($to, $subject, $description, $headers)) {
         http_response_code(200);
     } else {
         http_response_code(500);

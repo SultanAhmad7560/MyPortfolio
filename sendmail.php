@@ -5,10 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST["subject"];
     $description = $_POST["description"];
 
-    $to = "Sultan.ahmad.asif@example.com";
+    $to = "your_email@example.com";
+    $message = "$description";
     $headers = "From: $email";
 
-    if (mail($to, $subject, $description, $headers)) {
+    if (mail($to, $subject, $message, $headers)) {
         http_response_code(200);
     } else {
         http_response_code(500);

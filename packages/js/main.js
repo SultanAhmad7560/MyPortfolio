@@ -168,3 +168,16 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+ function sendMessage() {
+        const name = document.getElementById('nameInput').value;
+        const email = document.getElementById('emailInput').value;
+        const subject = document.getElementById('subjectInput').value;
+        const description = document.getElementById('descriptionInput').value;
+
+        const mailto_link = "mailto:Sultan.ahmad.asif@example.com" +
+            "?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nDescription: " + description);
+
+        window.location.href = mailto_link;
+    }

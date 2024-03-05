@@ -175,8 +175,8 @@ themeButton.addEventListener("click", () => {
         const subject = document.getElementById('subjectInput').value;
         const description = document.getElementById('descriptionInput').value;
 
-        const mailto_link = "mailto:Sultan.ahmad.asif@gmail.com" +
-            "?subject=" + encodeURIComponent(subject) +
+        const mailto_link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent('Sultan.ahmad.asif@gmail.com') +
+            "&su=" + encodeURIComponent(subject) +
             "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nDescription: " + description);
 
         window.location.href = mailto_link;

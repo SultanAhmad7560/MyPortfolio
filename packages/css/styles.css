@@ -8,7 +8,7 @@
   /*========== Colors ==========*/
  /* Change favorite color */
 
-body.dark-theme {
+body {
 --hue-color: 180; /* Blue-green hues for a warm day */
 
 /* Color palette */

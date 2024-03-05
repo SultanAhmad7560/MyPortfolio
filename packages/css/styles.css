@@ -1331,3 +1331,15 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Circle style */
+#colorchange-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+

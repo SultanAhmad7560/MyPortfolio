@@ -175,7 +175,7 @@ themeButton.addEventListener("click", () => {
         const subject = document.getElementById('subjectInput').value;
         const description = document.getElementById('descriptionInput').value;
 
-        const mailto_link = "mailto:Sultan.ahmad.asif@example.com" +
+        const mailto_link = "mailto:Sultan.ahmad.asif@gmail.com" +
             "?subject=" + encodeURIComponent(subject) +
             "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nDescription: " + description);
 

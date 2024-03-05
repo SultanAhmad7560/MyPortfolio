@@ -6,17 +6,14 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /* Change favorite color */
---hue-color: 120; /* Green */
+ /* Change favorite color */
+--hue-color: 200; /* Blue shade */
 
 /* HSL color mode */
-/* Color set 1 */
 --first-color: hsl(var(--hue-color), 60%, 50%);
 --first-color-second: hsl(var(--hue-color), 50%, 40%);
 --first-color-alt: hsl(var(--hue-color), 40%, 30%);
 --first-color-lighter: hsl(var(--hue-color), 70%, 85%);
-
-/* Common colors */
 --title-color: hsl(var(--hue-color), 20%, 20%);
 --text-color: hsl(var(--hue-color), 20%, 40%);
 --text-color-light: hsl(var(--hue-color), 20%, 60%);
@@ -25,8 +22,7 @@
 --container-color: hsl(var(--hue-color), 60%, 92%);
 --scroll-bar-color: hsl(var(--hue-color), 30%, 90%);
 --scroll-thumb-color: hsl(var(--hue-color), 30%, 80%);
-
-
+  
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -76,21 +72,16 @@
 
 /*========== Variables Dark theme ==========*/
 /* Dark theme variables */
-/* Hue color */
---hue-darkcolor: 240; /* Blue */
 
-body.dark-theme {
-  /* HSL color mode */
-  --first-color-second: hsl(var(--hue-darkcolor), 50%, 10%);
-  --title-color: hsl(var(--hue-darkcolor), 20%, 95%);
-  --text-color: hsl(var(--hue-darkcolor), 20%, 40%);
-  --text-color-light: hsl(var(--hue-darkcolor), 20%, 60%);
-  --input-color: hsl(var(--hue-darkcolor), 50%, 20%);
-  --body-color: hsl(var(--hue-darkcolor), 60%, 15%);
-  --container-color: hsl(var(--hue-darkcolor), 50%, 20%);
-  --scroll-bar-color: hsl(var(--hue-darkcolor), 30%, 50%);
-  --scroll-thumb-color: hsl(var(--hue-darkcolor), 30%, 40%);
-}
+--first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 
 
 /*========== Button Dark/Light ==========*/

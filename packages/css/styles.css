@@ -7,21 +7,22 @@
 
   /*========== Colors ==========*/
  /* Change favorite color */
---hue-color-neon-lime: 90;
+--hue-color: 180; /* Blue-green hues for a warm day */
 
-/* HSL color mode */
---first-color: hsl(var(--hue-color-neon-lime), 60%, 50%);
---first-color-second: hsl(var(--hue-color-neon-lime), 50%, 40%);
---first-color-alt: hsl(var(--hue-color-neon-lime), 40%, 30%);
---first-color-lighter: hsl(var(--hue-color-neon-lime), 70%, 85%);
---title-color: hsl(var(--hue-color-neon-lime), 20%, 20%);
---text-color: hsl(var(--hue-color-neon-lime), 20%, 40%);
---text-color-light: hsl(var(--hue-color-neon-lime), 20%, 60%);
---input-color: hsl(var(--hue-color-neon-lime), 60%, 96%);
---body-color: hsl(var(--hue-color-neon-lime), 70%, 98%);
---container-color: hsl(var(--hue-color-neon-lime), 60%, 92%);
---scroll-bar-color: hsl(var(--hue-color-neon-lime), 30%, 90%);
---scroll-thumb-color: hsl(var(--hue-color-neon-lime), 30%, 80%);
+/* Color palette */
+--first-color: hsl(var(--hue-color), 60%, 50%); /* Main color */
+--first-color-second: hsl(var(--hue-color), 50%, 40%); /* Slightly darker shade */
+--first-color-alt: hsl(var(--hue-color), 40%, 30%); /* Darker shade */
+--first-color-lighter: hsl(var(--hue-color), 70%, 85%); /* Lighter shade */
+--title-color: hsl(var(--hue-color), 20%, 20%); /* Dark title color */
+--text-color: hsl(var(--hue-color), 20%, 40%); /* Regular text color */
+--text-color-light: hsl(var(--hue-color), 20%, 60%); /* Light text color */
+--input-color: hsl(var(--hue-color), 60%, 96%); /* Input field color */
+--body-color: hsl(var(--hue-color), 70%, 98%); /* Body color */
+--container-color: hsl(var(--hue-color), 60%, 92%); /* Container color */
+--scroll-bar-color: hsl(var(--hue-color), 30%, 90%); /* Scroll bar color */
+--scroll-thumb-color: hsl(var(--hue-color), 30%, 80%); /* Scroll thumb color */
+
 
   
 
@@ -73,17 +74,20 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --hue-color-neon: 240;
-  
-  --first-color-second: hsl(var(--hue-color-neon), 100%, 10%);
-  --title-color: hsl(var(--hue-color-neon), 100%, 80%);
-  --text-color: hsl(var(--hue-color-neon), 100%, 50%);
-  --text-color-light: hsl(var(--hue-color-neon), 100%, 70%);
-  --input-color: hsl(var(--hue-color-neon), 100%, 20%);
-  --body-color: hsl(var(--hue-color-neon), 100%, 15%);
-  --container-color: hsl(var(--hue-color-neon), 100%, 20%);
-  --scroll-bar-color: hsl(var(--hue-color-neon), 30%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color-neon), 30%, 36%);
+--hue-color: 240; /* Purple hues for a night theme */
+
+--first-color: hsl(var(--hue-color), 60%, 50%); /* Main color */
+--first-color-second: hsl(var(--hue-color), 50%, 40%); /* Slightly darker shade */
+--first-color-alt: hsl(var(--hue-color), 40%, 30%); /* Darker shade */
+--first-color-lighter: hsl(var(--hue-color), 70%, 85%); /* Lighter shade */
+--title-color: hsl(var(--hue-color), 20%, 20%); /* Dark title color */
+--text-color: hsl(var(--hue-color), 20%, 40%); /* Regular text color */
+--text-color-light: hsl(var(--hue-color), 20%, 60%); /* Light text color */
+--input-color: hsl(var(--hue-color), 60%, 96%); /* Input field color */
+--body-color: hsl(var(--hue-color), 70%, 98%); /* Body color */
+--container-color: hsl(var(--hue-color), 60%, 92%); /* Container color */
+--scroll-bar-color: hsl(var(--hue-color), 30%, 90%); /* Scroll bar color */
+--scroll-thumb-color: hsl(var(--hue-color), 30%, 80%); /* Scroll thumb color */
 }
 
 

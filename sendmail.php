@@ -5,14 +5,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST["subject"];
     $description = $_POST["description"];
 
-    $to = "your_email@example.com";
+    $to = "Sultan.ahmad.asif@example.com";
     $message = "Name: $name\nEmail: $email\nSubject: $subject\nDescription: $description";
     $headers = "From: $email";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "Email sent successfully.";
+        http_response_code(200);
     } else {
-        echo "Failed to send email.";
+        http_response_code(500);
     }
+} else {
+    http_response_code(405);
 }
 ?>
